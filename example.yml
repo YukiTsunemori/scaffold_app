@@ -1,0 +1,7 @@
+animal: &animal #&animalとすることでanimalキーを参照する準備が整う
+  cat: 'ネコ'
+  dog: 'イヌ'
+
+animal_shop_1:
+  <<: *animal # <<: *キー名とすることでanimalキーが取得できる
+  hamster: 'ハムスター'
